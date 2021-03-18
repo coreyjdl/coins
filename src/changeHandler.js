@@ -4,8 +4,7 @@ const coins = [
     ["quarter",          25],
     ["dime",             10],
     ["nickel",           5],
-    ["penny",            1]
-];
+    ["penny",            1]];
 
 module.exports.makeChange = (number) => {
     
@@ -22,8 +21,8 @@ module.exports.makeChange = (number) => {
     }
 
     coins.forEach( coin => {
-        coinName = coin[0];
-        coinValue = coin[1];
+        let coinName = coin[0];
+        let coinValue = coin[1];
 
         output[coinName] = Math.floor(number / coinValue);
         number = number % coinValue;
@@ -31,4 +30,3 @@ module.exports.makeChange = (number) => {
 
     return output;
 }
-
