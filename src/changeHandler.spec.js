@@ -4,8 +4,7 @@ describe('changeHandler', () => {
 
     it('should return correct change for .99', async() => {
 
-        const testInput = '.99';
-        
+        const testInput = '.99';    
         const expectedResults = {
             'silver-dollar': 0,
             'half-dollar': 1,
@@ -22,7 +21,6 @@ describe('changeHandler', () => {
     it('should return correct change for 1.56', async() => {
 
         const testInput = '1.56';
-        
         const expectedResults = {
             'silver-dollar': 1,
             'half-dollar': 1,
@@ -56,7 +54,6 @@ describe('changeHandler', () => {
     it('should return correct change for $12.85 with dollar sign', async() => {
 
         const testInput = '$12.85';
-        
         const expectedResults = {
             'silver-dollar': 12,
             'half-dollar': 1,
